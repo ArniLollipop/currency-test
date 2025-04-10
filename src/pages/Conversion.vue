@@ -104,8 +104,8 @@ const handleChangeValue = (event: Event, type: number) => {
   }
 };
 
-const handleChangeSelect = (event: string | null, type: number) => {
-  if (event == null) {
+const handleChangeSelect = (event: string | null | undefined, type: number) => {
+  if (event == null || event == undefined) {
     return;
   }
 
